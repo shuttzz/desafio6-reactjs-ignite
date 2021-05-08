@@ -248,7 +248,7 @@ describe('Post', () => {
   it('should be able to render post document info', () => {
     const postProps = mockedGetByUIDReturn;
 
-    render(<Post post={postProps} />);
+    render(<Post post={postProps} preview />);
 
     screen.getByText('Como utilizar Hooks');
     screen.getByText('25 mar 2021');
